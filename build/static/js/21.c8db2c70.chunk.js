@@ -1,0 +1,2 @@
+(this.webpackJsonpemilus=this.webpackJsonpemilus||[]).push([[21],{534:function(e,s,t){"use strict";t.r(s);t(0);var i=t(554),c=t(5);s.default=()=>Object(c.jsx)(i.a,{title:"\u0413\u0440\u0443\u043f\u043f\u044b \u043a\u043b\u0438\u0435\u043d\u0442\u043e\u0432",children:Object(c.jsx)("p",{children:"\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0430 \u0433\u0440\u0443\u043f\u043f \u043a\u043b\u0438\u0435\u043d\u0442\u043e\u0432"})})}}]);
+//# sourceMappingURL=21.c8db2c70.chunk.js.map
