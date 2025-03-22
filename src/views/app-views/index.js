@@ -8,6 +8,9 @@ export const AppViews = () => {
     <Suspense fallback={<Loading cover="content"/>}>
       <Switch>
         
+        {/* Планировщик помещения */}
+        <Route path={`${APP_PREFIX_PATH}/home/planner`} component={lazy(() => import(`./home/planner`))} />
+        
         {/* Каталог */}
         <Route path={`${APP_PREFIX_PATH}/home/catalog/products`} component={lazy(() => import(`./home/catalog/products`))} />
         <Route path={`${APP_PREFIX_PATH}/home/catalog/categories`} component={lazy(() => import(`./home/catalog/categories`))} />
@@ -48,6 +51,7 @@ export const AppViews = () => {
         <Redirect from={`${APP_PREFIX_PATH}/home/addresses`} to={`${APP_PREFIX_PATH}/home/addresses/address`} />
         <Redirect from={`${APP_PREFIX_PATH}/system`} to={`${APP_PREFIX_PATH}/system/settings`} />
         <Redirect from={`${APP_PREFIX_PATH}/home/catalog`} to={`${APP_PREFIX_PATH}/home/catalog/products`} />
+        <Redirect from={`${APP_PREFIX_PATH}/home`} to={`${APP_PREFIX_PATH}/home/planner`} />
         <Redirect from={`${APP_PREFIX_PATH}`} to="/" />
       </Switch>
     </Suspense>

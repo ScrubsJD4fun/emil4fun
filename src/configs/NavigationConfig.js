@@ -10,7 +10,8 @@ import {
   SettingOutlined,
   MobileOutlined,
   ShoppingCartOutlined,
-  PlusCircleOutlined
+  PlusCircleOutlined,
+  HomeOutlined
 } from '@ant-design/icons';
 import { APP_PREFIX_PATH } from 'configs/AppConfig'
 
@@ -149,6 +150,14 @@ const homeNavTree = [{
       path: `${APP_PREFIX_PATH}/home/mailing`,
       title: 'Рассылки',
       icon: MailOutlined,
+      breadcrumb: false,
+      submenu: []
+    },
+    {
+      key: 'home-planner',
+      path: `${APP_PREFIX_PATH}/home/planner`,
+      title: 'Планировщик',
+      icon: AppstoreOutlined,
       breadcrumb: false,
       submenu: []
     },

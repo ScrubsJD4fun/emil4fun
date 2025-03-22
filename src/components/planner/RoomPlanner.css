@@ -1,0 +1,92 @@
+.room-planner {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  height: calc(100vh - 100px);
+}
+
+.furniture-list {
+  width: 250px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.furniture-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.furniture-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.furniture-item:hover {
+  background: #f5f5f5;
+}
+
+.furniture-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.planning-board {
+  flex: 1;
+  background: #f8f9fa;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+  border: 2px dashed #ddd;
+}
+
+.placed-item {
+  position: absolute;
+  cursor: move;
+}
+
+.placed-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.planner-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button, .import-button {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.2s;
+}
+
+button:hover, .import-button:hover {
+  background: #0056b3;
+}
+
+.import-button {
+  background: #28a745;
+}
+
+.import-button:hover {
+  background: #218838;
+} 
